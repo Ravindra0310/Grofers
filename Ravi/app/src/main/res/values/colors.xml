@@ -9,4 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#fd6b29</color>
     <color name="trueCallerBlue">#0086fe</color>
+    <color name="home_toolbar_color">#1B2121</color>
+    <color name="oragan_for_background">#ffe297</color>
+    <color name="gray">#9a9a9a</color>
+    <color name="orange">#ea6225</color>
 </resources>

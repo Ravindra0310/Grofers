@@ -7,6 +7,8 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -29,6 +31,12 @@
         <activity android:name=".LocationPermission" />
         <activity android:name=".supermarket_Vs_grofers" />
         <activity android:name=".MainActivity">
+        <activity android:name=".ProductDetailsActivity"></activity>
+        <activity
+            android:name=".MainActivity">
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.GrofersApp.NoActionBar" />
+        <activity android:name=".MainActivity2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Welcome">
+            <menu>
+                <item
+                    android:id="@+id/nav_loaction"
+                    android:icon="@drawable/ic_location"
+                    android:title="@string/nav_location" />
+                <item
+                    android:id="@+id/nav_address"
+                    android:icon="@drawable/ic_address"
+                    android:title="My Addressses" />
+                <item
+                    android:id="@+id/nav_order"
+                    android:icon="@drawable/ic_check_list"
+                    android:title="My Orders" />
+                <item
+                    android:id="@+id/nav_Cart"
+                    android:icon="@drawable/ic_shopping_cart_empty_side_view"
+                    android:title="My Cart" />
+                <item
+                    android:id="@+id/nav_wallet"
+                    android:icon="@drawable/ic_rupee"
+                    android:title="My Wallet" />
+                <item
+                    android:id="@+id/nav_notification"
+                    android:icon="@drawable/ic_alarm"
+                    android:title="My Notification" />
+                <item
+                    android:id="@+id/nav_offer"
+                    android:icon="@drawable/ic_email"
+                    android:title="Offer Zone " />
+                <item
+                    android:id="@+id/nav_refer"
+                    android:icon="@drawable/ic_heart_box"
+                    android:title="Refer Your Friends" />
+                <item
+                    android:id="@+id/nav_Win"
+                    android:icon="@drawable/ic_success"
+                    android:title="WinWin Points" />
+                <item
+                    android:id="@+id/nav_sale"
+                    android:icon="@drawable/ic_shopping_bag"
+                    android:title="GOBD Sale" />
+                <item
+                    android:id="@+id/nav_inaam"
+                    android:icon="@drawable/ic_heart_box"
+                    android:title="My INNAM" />
+                <item
+                    android:id="@+id/nav_lucky"
+                    android:icon="@drawable/ic_ticket"
+                    android:title="Lucky Draw Game" />
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Others"
+            android:title="Others">
+            <menu>
+                <item
+                    android:id="@+id/nav_support"
+                    android:icon="@drawable/ic_ticket"
+                    android:title="Customer Support" />
+                <item
+                    android:id="@+id/nav_rateUs"
+                    android:icon="@drawable/ic_star"
+                    android:title="Rate Us" />
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_share"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/nav_aboutUs"
+                    android:icon="@drawable/ic_g_logo_circle"
+                    android:title="About Us" />
+                <item
+                    android:id="@+id/nav_LogOut"
+                    android:icon="@drawable/ic_avatar"
+                    android:title="Logout" />
+            </menu>
+
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_aboutThisRelease"
+            android:icon="@drawable/ic_settings"
+            android:title="About This Release" />
+    </group>
+</menu>
