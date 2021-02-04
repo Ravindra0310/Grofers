@@ -4,10 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.example.grofers_app.adapter_holders.ViewPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 public class ProductDetailsActivity extends AppCompatActivity {
@@ -21,7 +21,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private TabLayout tabLayout;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_details);
         init();

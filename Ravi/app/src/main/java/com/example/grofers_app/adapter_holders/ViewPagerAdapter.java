@@ -1,9 +1,13 @@
-package com.example.grofers_app;
+package com.example.grofers_app.adapter_holders;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
+
+import com.example.grofers_app.Product_ImageFragment1;
+import com.example.grofers_app.Product_ImageFragment2;
+import com.example.grofers_app.Product_ImageFragment3;
 
 public class ViewPagerAdapter extends FragmentStatePagerAdapter{
 
