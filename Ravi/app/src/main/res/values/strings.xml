@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Grofers-App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="you_have_no_address0">You have no saved addresses</string>
+    <string name="tell_us_where">Tell us where you want your orders delivered</string>
+    <string name="add_new_address">Add new address in Pune Sainath Nagar</string>
 </resources>

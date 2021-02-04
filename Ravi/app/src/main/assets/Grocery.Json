@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "image":"https://dailyshoppinglakemba.com.au/wp-content/uploads/2020/04/Chakki-Atta.jpg",
+    "title": "Aashirvaad Shudh Chakki",
+    "Product MRP":421.00,
+    "Selling Price":330.00,
+    "Unit":"10kg",
+    "description":"Aashirvaad Shudh Chakki Whole Wheat Atta is ground with utmost precision, using the traditional chakki-grinding process by picking the choicest of grains to give fresh and 100% pure wheat flour. Enriched with wholesome vitamins, it can be used to prepare the     softest of roti's. The use of superior quality grains makes Aashirvaad Whole Wheat Atta a healthy and wholesome choice. Pure wheat          grain, without any Maida addition, is used in the preparation of the flour. Helps in making soft and delicious chapatis. Provides fibre     content to the body. Extra protein enrichments strengthen the body",
+    "category":"Grocery"
+  },
+  {
+    "id": 2,
+    "image":"https://dailyshoppinglakemba.com.au/wp-content/uploads/2020/08/Amul-Pure-Ghee-1L_2-1.png",
+    "title": "Amul Pure Ghee",
+    "Product MRP":500.00,
+    "Selling Price":450.00,
+    "Unit":"1kg",
+    "description":"Made from the freshest of cream, that is extracted from pure milk, Amul Pure Ghee is the perfect addition to your meals    for a delectable taste, The aroma of ghee greatly enhances the taste and flavour of your food, It is used for a variety of recipes and    contains omega fatty acids and vitamins A, D, E, and K that are good for your health, The ghee has been hygienically packed and sealed    so that it retains its freshness and aroma, Add a dollop of ghee to your rice or spread it over your rotis to make your food delicious",
+    "category":"Grocery"
+  },
+  {
+    "id":3,
+    "image":"https://dailyshoppinglakemba.com.au/wp-content/uploads/2020/05/Alishaan-Delight-Basmati-Rice-5kg.png",
+    "title":"Rozana Basmati Rice",
+    "Product MRP": 300.00,
+    "Selling Price": 150.00,
+    "Unit":"2kg",
+    "description":"Carefully selected for the highest quality  Rich aroma and tasteWidely used in cooking for an authentic Indian taste  A perfect fit for everyday consumption",
+    "category":"Grocery"
+  },
+  {
+    "id":4,
+    "image":"https://dailyshoppinglakemba.com.au/wp-content/uploads/2020/05/bajaj-almond-drops-300ml.jpg",
+    "title":"Bajaj Almond500 ml Hair Oil",
+    "Product MRP":280.00,
+    "Selling Price":244.00,
+    "Unit":"500gm",
+    "description":"Oiling need no longer be a hassle with the light and non-sticky Bajaj Almond Drops Hair oil, enriched with almond oil & 6X Vitamin E to give you strong hair",
+    "category":"Personal Care"
+  },
+  {
+    "id":5,
+    "image":"https://dailyshoppinglakemba.com.au/wp-content/uploads/2020/08/Dabur-Gulabari-Rose-water-scaled.jpg",
+    "title":"Dabur Gulabari ",
+    "Product MRP":75.00,
+    "Selling Price":44.00,
+    "Unit":"250gm",
+    "description":"The eternal rose has been revered and loved by all things beautiful. Our ancestors could not get enough of this belle and so can’t we. Dabur Gulabari Rose Water that has the goodness of the edible grade Damask roses from kannauj, is worthy to be your daily skincare saviour. It serves as a cleanser, toner, and gentle moisturizing agent suitable for all skin types. Rosewater provides immense benefits to the skin, keeping it radiant, acne-free, and youthful by acting as a gentle non-alcoholic skin toner. It also purifies the skin, protects it from bacterial infections, removes make-up and dirt and stimulates skin circulation. It maintains the pH balance of the skin and offers calming effect on acne. It also provides instant hydration to your skin while rejuvenating tired and dull skin",
+    "category":"Personal Care"
+  },
+  {
+    "id":6,
+    "image":"https://rukminim1.flixcart.com/image/416/416/kf2v3ww0/lipstick/q/f/f/6-fab-5-5-in-1-lipstick-renee-original-imafvhp2tuft7rxd.jpeg?q=70",
+    "title":"Lipstics",
+    "Product MRP":1200,
+    "Selling Price":800,
+    "Unit":"50gm",
+    "description":"Multicolor",
+    "category":"Personal Care"
+  },
+  {
+    "id":7,
+    "image":"https://dailyshoppinglakemba.com.au/wp-content/uploads/2016/05/Broccoli-1-Kg-1000x1000-1.jpg",
+    "title":"G Fresh Broccoli",
+    "Product MRP":30.00,
+    "Selling Price":30.00,
+    "Unit":"1kg",
+    "description":"Broccoli is essentially a large edible flower. The stalks and flower florets are eaten both raw and cooked and have a flavor  reminiscent of cabbage. It has a pleasant taste",
+    "category":"VegeTables &Fruits"
+  },
+  {
+    "id":8,
+    "image":"https://dailyshoppinglakemba.com.au/wp-content/uploads/2020/05/Bata-Fish.jpg",
+    "title":"Delichick Silver Promfret Fish",
+    "Product MRP":730.00,
+    "Selling Price":730.00,
+    "Unit":"2kg",
+    "description":"This flat diamond shaped fish is a non-oily fish with a single bone. The fish is meaty and has a buttery texture. The fish goes well with Indian curries, fried preparations and for grills. The fish is hugely popular across the country. Although so popular the fish still enjoys its exotic status",
+    "category":"VegeTables&Fruits"
+  },
+  {
+    "id":9,
+    "image":"https://dailyshoppinglakemba.com.au/wp-content/uploads/2020/04/Morning-Fresh-Salted-Biscuit-Jar.jpg",
+    "title":"Buiscuits",
+    "Product MRP":100.00,
+    "Selling Price":80.00,
+    "Unit":"500gm",
+    "description":"Britannia Nutri Choice Hi Fibre Digestive Biscuits are packed with the goodness of whole wheat and fibre. Britannia digestive biscuits are a good source of energy and tasty enough to enjoy any time of day. Britannia biscuits and cookies for long has been a part of every home, sharing those moments of joy",
+    "category":"Buiscuits&Choclates"
+  },
+  {
+    "id":10,
+    "image":"https://www.bigbasket.com/media/uploads/p/l/30005023_3-kinder-joy-for-boys-with-surprise.jpg",
+    "title":"Kinder Joy",
+    "Product MRP":35.00,
+    "Selling Price":30.00,
+    "Unit":"20gm",
+    "description":"Kinder Joy is a delight for children that combines chocolate, a surprise and a toy. For the first time ever, Kinder Joy comes in two variants – for boys and for girls. One half of this unique treatment for children comes in well-designed portion size of delicious milk and cocoa cream and two crunchy wafer balls filled with cocoa cream. The other half is the surprise toy which has been designed specifically keeping in mind the individual requirements and different spontaneous ways of playing for boys and for girls",
+    "category":"Buiscuits&Choclates"
+  },
+  {
+    "id":11,
+    "image":"https://rukminim1.flixcart.com/image/416/416/jgjq0sw0/bedsheet/a/e/j/supersoft-mg264-fitted-elastic-mr-gaba-original-imaf4hppzazd7wc3.jpeg?q=70",
+    "title":"Bed Sheet",
+    "Product MRP":400.00,
+    "Selling Price":300.00,
+    "Unit":"1 Item",
+    "description":"About MHi Brothers: Invite MHi Brothers products into your home for their form and function, and experience their style, craftsmanship, and value. We travel the world to find the best materials and designs for MHi Brothers products and use the most sensible manufacturing methods. We thoroughly test each MHi Brothers item and reply on feedback from our customers to help us deliver the highest quality. Check out all of our MHi Brothers products, including bedding, towels, and more, and you'll find something for all occasions at the best values. With a selection that continues to grow, the MHi Brothers brand is set to become a part of your lifestyle.Best quality products available at cheapest range guaranteed because MHi Brothers” Powered By “Dinesh Machroli” product Comfort Bed Sheet is the special designed comfort set which is very famous for Daily Use,marriage gift and anniversary gift. It provides the comfort for Namaaz, Sitting, Touring, Kids Play, Yoga Mat, Bed Cover, Floor Mat, Aasan, Wall Hanging, Gifted, Wedding, Official, Decorated, Traditional, Drawing room, Sleeping room, Colourful • About the product “MHi Brothers ” • Features: • Anti-Shrinkage • Anti-Wrinkle • Good Color Fastness(No Colorfade) • Sobers well as Lively Colors • Elegant Design • Nice Drape •Lowest Price •Quality Product • Fast Shipping • All Size •Ready to use •Best Price •Branded Product • @ WHOLE SALE PRICE WITH CHALLENGE Features: • Luxury Soft feel bedding for superior comfort. • Fancy Mix N Match Design. • Soft luxury bedding for an affordable price. • This Bed sheet is soft and smooth to the touch. • Providing elegance and sophistication Bed Sheet. • Its Give the graceful and modern look for any bedroom. • These sheets are made of high strength micro fiber yarns that stay comfortable and wrinkle free for year to come. • These sheets retain their vibrant color, providing the needed charm to complete any bedroom",
+    "category":"Home Furnishing"
+  },
+  {
+    "id":12,
+    "image":"https://rukminim1.flixcart.com/image/416/416/k5r2mq80/shoe-rack/v/z/h/nitlok2-nitlok-original-imaf9c5h2fe8rrnt.jpeg?q=70",
+    "title":"Shoe Rack",
+    "Product MRP": 500.00,
+    "Selling Price":300.00,
+    "Unit":"i Item",
+    "description":"Keep your shoes organized and off the floor with this Shoe Rack. This elegantly modern shoe rack will allow your home to stay organized and stylish with its compact design",
+    "category":"HomeFurnishing"
+  },
+  {
+    "id":13,
+    "image":"https://rukminim1.flixcart.com/image/416/416/k0zlsi80/normal-photo-frame/y/3/d/magic-mirror-imported-photo-frame-with-led-light-photo-print-original-imafknhahghfu7yy.jpeg?q=70",
+    "title":"PhotoFrame",
+    "Product MRP":400.00,
+    "Selling Price":300.00,
+    "Unit":"1 Item",
+    "description":"Normal Photo Frame",
+    "category":"HomeFurnishing"
+  },
+  {
+    "id":14,
+    "image":"https://rukminim1.flixcart.com/image/416/416/kchzhjk0/art-craft-kit/s/n/9/19-pcs-mix-stationary-set-of-blue-colour-pick-n-play-original-imaftmakfhpnhrfy.jpeg?q=70",
+    "title":"Mix Stationary",
+    "Product MRP":500.00,
+    "Selling Price":345.00,
+    "Unit":"1 Item",
+    "description":"Every effort is made to maintain the accuracy of all information. However, actual product packaging and materials may contain more and/or different information. The color of the product displayed in the image may differ from that received in the order. It is recommended not to solely rely on the details presented",
+    "category":"Books& Stationary"
+  },
+  {
+    "id":15,
+    "image":"https://rukminim1.flixcart.com/image/416/416/kkcwo7k0/regionalbooks/p/y/3/ssc-je-2021-civil-engineering-previous-years-topic-wise-original-imafzpufudfmtfuh.jpeg?q=70",
+    "title":"Engineering Book",
+    "Product MRP":1000.00,
+    "Selling Price":900,
+    "Unit":"1 Item",
+    "description":"Ssc-Je 2021 Civil Engineering Previous Years Topic Wise Objective Detailed Solution With Theory",
+    "category":"Books& Stationary"
+  }
+]
