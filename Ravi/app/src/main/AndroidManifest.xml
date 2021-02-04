@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.grofers_app">
-    <uses-permission android:name="android.permission.INTERNET"/>
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,6 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GrofersApp">
+        <activity android:name=".ProductCart_Activity"></activity>
+        <activity android:name=".ProductDetailsActivity" />
+        <activity android:name=".Home_Activity">
         <activity android:name=".ProductDetailsActivity"></activity>
         <activity
             android:name=".DicountMainActivity"

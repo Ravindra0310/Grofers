@@ -14,11 +14,14 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.grofers_app.listners.FragmentCommunication;
+import com.example.grofers_app.listners.OnListnerClick;
+import com.example.grofers_app.adapter_holders.ProdectHomAdapter;
 import com.example.grofers_app.FragmentCommunication;
 import com.example.grofers_app.OnListnerClick;
 import com.example.grofers_app.ProdectHomAdapter;
 import com.example.grofers_app.R;
-import com.example.grofers_app.ResponseProdect;
+import com.example.grofers_app.adapter_holders.ResponseProdect;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 

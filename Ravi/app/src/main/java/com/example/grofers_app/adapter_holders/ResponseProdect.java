@@ -1,4 +1,4 @@
-package com.example.grofers_app;
+package com.example.grofers_app.adapter_holders;
 
 import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
