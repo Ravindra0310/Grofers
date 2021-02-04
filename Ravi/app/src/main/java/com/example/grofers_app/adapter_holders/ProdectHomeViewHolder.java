@@ -28,6 +28,8 @@ public class ProdectHomeViewHolder extends RecyclerView.ViewHolder {
         initView();
     }
 
+
+
     private void getDataOfProduct() {
 
     }

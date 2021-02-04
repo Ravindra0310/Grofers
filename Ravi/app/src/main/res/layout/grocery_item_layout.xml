@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:elevation="10dp"
+    android:id="@+id/CardViewes"
     android:layout_margin="16dp"
     android:layout_height="wrap_content">
 
@@ -47,5 +48,15 @@
             android:layout_toRightOf="@id/GroceryImage"
             android:layout_below="@id/GroceryItemName"
             android:padding="12dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:id="@+id/ItemButton"
+            android:layout_height="35dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="150dp"
+            android:layout_toRightOf="@id/GroceryImage"
+            android:background="@drawable/ic_addbutton"/>
+
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

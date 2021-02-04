@@ -22,13 +22,6 @@ public class DicountMainActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private TabLayout tabLayout;
 
-private ProgressBar progressBar;
-    private NavigationView navigationView;
-    private DrawerLayout drawerLayout;
-    private Menu menu;
-    private TextView textView;
-    private androidx.appcompat.widget.Toolbar Toolbar;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,11 +29,11 @@ private ProgressBar progressBar;
         setContentView(R.layout.activity_discount);
 
         viewPager = findViewById(R.id.FruitsviewPager);
-        tabLayout=findViewById(R.id.FruitstabLayout);
-       setViewPagerAdapter();
+        tabLayout = findViewById(R.id.FruitstabLayout);
+        setViewPagerAdapter();
 
 
-}
+    }
 
     private void setViewPagerAdapter() {
         ViewPagerofDiscountAdapter viewPagerAdapter = new ViewPagerofDiscountAdapter(getSupportFragmentManager(),
@@ -48,22 +41,6 @@ private ProgressBar progressBar;
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
 
-        initView();
-        NavigationViewDrawerMenu();
-    }
-
-    private void NavigationViewDrawerMenu() {
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, Toolbar, R.string.navigation_open, R.string.navigation_close);
-        drawerLayout.addDrawerListener(toggle);
-        toggle.syncState();
-    }
-
-    private void initView() {
-        drawerLayout = findViewById(R.id.drawer_layout);
-        navigationView = findViewById(R.id.nav_view);
-        Toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(Toolbar);
-
 
     }
-    }
+}

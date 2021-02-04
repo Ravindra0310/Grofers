@@ -47,7 +47,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
     }
 
     private void setViewPagerAdapter() {
-        ViewPagerofDiscountAdapter viewPagerAdapter=new ViewPagerofDiscountAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+        ViewPagerAdapter viewPagerAdapter=new ViewPagerAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
     }

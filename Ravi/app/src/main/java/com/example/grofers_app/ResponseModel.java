@@ -33,8 +33,8 @@ public class ResponseModel implements Serializable {
 		return image;
 	}
 
-	public Object getProductMRP(){
-		return productMRP;
+	public String getProductMRP(){
+		return (String) productMRP;
 	}
 
 	public String getDescription(){
@@ -57,7 +57,7 @@ public class ResponseModel implements Serializable {
 		return category;
 	}
 
-	public Object getSellingPrice(){
-		return sellingPrice;
+	public String getSellingPrice(){
+		return (String) sellingPrice;
 	}
 }
