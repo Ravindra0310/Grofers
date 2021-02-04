@@ -14,10 +14,10 @@
         android:theme="@style/Theme.GrofersApp">
         <activity android:name=".ProductDetailsActivity"></activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".DicountMainActivity"
             android:label="@string/title_activity_main2"
             android:theme="@style/Theme.GrofersApp.NoActionBar" />
-        <activity android:name=".MainActivity2">
+        <activity android:name=".DicountMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -12,13 +12,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toolbar;
 
 import com.google.android.material.navigation.NavigationView;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class MainActivity extends AppCompatActivity {
+public class DicountMainActivity extends AppCompatActivity {
 
     private ViewPager viewPager;
     private TabLayout tabLayout;
@@ -34,7 +33,7 @@ private ProgressBar progressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_discount);
 
         viewPager = findViewById(R.id.FruitsviewPager);
         tabLayout=findViewById(R.id.FruitstabLayout);
@@ -44,7 +43,7 @@ private ProgressBar progressBar;
 }
 
     private void setViewPagerAdapter() {
-        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(),
+        ViewPagerofDiscountAdapter viewPagerAdapter = new ViewPagerofDiscountAdapter(getSupportFragmentManager(),
                 FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);

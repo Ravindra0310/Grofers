@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,7 +15,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.grofers_app.FragmentCommunication;
-import com.example.grofers_app.MainActivity;
 import com.example.grofers_app.OnListnerClick;
 import com.example.grofers_app.ProdectHomAdapter;
 import com.example.grofers_app.R;
