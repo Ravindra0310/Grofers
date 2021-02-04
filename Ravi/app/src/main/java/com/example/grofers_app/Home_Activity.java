@@ -2,11 +2,8 @@ package com.example.grofers_app;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.view.Menu;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
+import com.example.grofers_app.listners.FragmentCommunication;
 import com.google.android.material.navigation.NavigationView;
 
 
@@ -14,13 +11,13 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class MainActivity2 extends AppCompatActivity implements FragmentCommunication {
+public class Home_Activity extends AppCompatActivity implements FragmentCommunication {
     private AppBarConfiguration mAppBarConfiguration;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_home);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -48,13 +45,26 @@ public class MainActivity2 extends AppCompatActivity implements FragmentCommunic
     @Override
     public void commincation(Bundle bundle) {
         if (bundle != null) {
-            Intent intent = new Intent(MainActivity2.this, ProductDetailsActivity.class);
+            Intent intent = new Intent(Home_Activity.this, ProductDetailsActivity.class);
             intent.putExtra("name", bundle.getString("name"));
             intent.putExtra("Url", bundle.getString("Url"));
             intent.putExtra("Selling", bundle.getString("selling"));
             intent.putExtra("Mrp", bundle.getString("Mrp"));
             intent.putExtra("unit", bundle.getString("unit"));
             intent.putExtra("des", bundle.getString("des"));
+            startActivity(intent);
+        }
+    }
+
+    @Override
+    public void sendTOCart(Bundle bundle) {
+        if (bundle != null) {
+            Intent intent = new Intent(Home_Activity.this, ProductCart_Activity.class);
+            intent.putExtra("name", bundle.getString("name"));
+            intent.putExtra("Url", bundle.getString("Url"));
+            intent.putExtra("Selling", bundle.getString("selling"));
+            intent.putExtra("Mrp", bundle.getString("Mrp"));
+            intent.putExtra("unit", bundle.getString("unit"));
             startActivity(intent);
         }
     }

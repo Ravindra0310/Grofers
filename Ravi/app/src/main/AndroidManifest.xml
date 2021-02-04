@@ -16,6 +16,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GrofersApp">
+        <activity android:name=".ProductCart_Activity"></activity>
+        <activity android:name=".ProductDetailsActivity" />
+        <activity android:name=".Home_Activity">
         <activity android:name=".WinWin"></activity>
         <activity android:name=".Refer_your_friend" />
         <activity android:name=".websites" />
