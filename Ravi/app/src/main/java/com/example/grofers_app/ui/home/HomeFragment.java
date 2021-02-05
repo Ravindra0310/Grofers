@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.grofers_app.listners.FragmentCommunication;
 import com.example.grofers_app.listners.OnListnerClick;
 import com.example.grofers_app.adapter_holders.ProdectHomAdapter;
+
 import com.example.grofers_app.R;
 import com.example.grofers_app.adapter_holders.ResponseProdect;
 import com.google.gson.Gson;
@@ -55,7 +56,6 @@ public class HomeFragment extends Fragment implements OnListnerClick {
         super.onViewCreated(view, savedInstanceState);
         initView(view);
       fetchResposeFromJsonAssets();
-
     }
 
 
@@ -109,13 +109,7 @@ public class HomeFragment extends Fragment implements OnListnerClick {
 
     @Override
     public void sendToCart(ResponseProdect responseProdect, int position) {
-        Bundle bundle=new Bundle();
-        bundle.putString("name",responseProdect.getTitle());
-        bundle.putString("Url",responseProdect.getImage());
-        bundle.putString("selling",responseProdect.getSellingPrice());
-        bundle.putString("Mrp",responseProdect.getProductMRP());
-        bundle.putString("unit",responseProdect.getUnit());
-        fragmentCommunication.sendTOCart(bundle);
+
     }
 
     @Override
