@@ -1,4 +1,4 @@
-package com.example.grofers_app;
+package com.example.grofers_app.DiscountFragments;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.grofers_app.DiscountFragments.GroceryViewHolder;
+import com.example.grofers_app.R;
 import com.example.grofers_app.adapter_holders.ResponseProdect;
 import com.example.grofers_app.listners.OnListnerClick;
 

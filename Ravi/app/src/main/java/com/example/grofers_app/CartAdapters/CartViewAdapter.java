@@ -1,4 +1,4 @@
-package com.example.grofers_app;
+package com.example.grofers_app.CartAdapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -6,6 +6,9 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.grofers_app.ListnerForRemove;
+import com.example.grofers_app.R;
 
 import java.util.List;
 

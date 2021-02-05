@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.grofers_app.DiscountFragments.DicountMainActivity;
 import com.example.grofers_app.listners.FragmentCommunication;
 import com.google.android.material.navigation.NavigationView;
 
@@ -15,9 +16,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import static android.widget.Toast.LENGTH_LONG;
-
-public class Home_Activity extends AppCompatActivity implements FragmentCommunication {
+public class Home_Activity extends AppCompatActivity implements FragmentCommunication,OpenDiscountMain{
     private AppBarConfiguration mAppBarConfiguration;
 
     @Override
@@ -74,5 +73,11 @@ public class Home_Activity extends AppCompatActivity implements FragmentCommunic
             Toast.makeText(this,"Product is Added To Cart",Toast.LENGTH_SHORT).show();
             startActivity(intent);
         }
+    }
+
+    @Override
+    public void openDiscount(String data) {
+        Intent intent=new Intent(Home_Activity.this, DicountMainActivity.class);
+        startActivity(intent);
     }
 }

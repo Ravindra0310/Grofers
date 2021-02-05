@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center"
-    tools:context=".DicountMainActivity">
+    tools:context=".DiscountFragments.DicountMainActivity">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toollbar"
         android:layout_width="match_parent"

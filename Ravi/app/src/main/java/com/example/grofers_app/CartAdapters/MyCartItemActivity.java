@@ -1,8 +1,10 @@
-package com.example.grofers_app;
+package com.example.grofers_app.CartAdapters;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.grofers_app.R;
 
 public class MyCartItemActivity extends AppCompatActivity {
 

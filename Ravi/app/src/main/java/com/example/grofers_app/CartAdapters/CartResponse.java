@@ -1,4 +1,4 @@
-package com.example.grofers_app;
+package com.example.grofers_app.CartAdapters;
 
 public class CartResponse {
     private String ImageUrl;

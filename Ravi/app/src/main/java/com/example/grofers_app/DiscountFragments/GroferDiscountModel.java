@@ -1,4 +1,4 @@
-package com.example.grofers_app;
+package com.example.grofers_app.DiscountFragments;
 
 import android.graphics.ColorSpace;
 

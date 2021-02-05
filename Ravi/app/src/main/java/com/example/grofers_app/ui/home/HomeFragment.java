@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,6 +15,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.grofers_app.OpenDiscountMain;
 import com.example.grofers_app.listners.FragmentCommunication;
 import com.example.grofers_app.listners.OnListnerClick;
 import com.example.grofers_app.adapter_holders.ProdectHomAdapter;
@@ -35,6 +37,8 @@ public class HomeFragment extends Fragment implements OnListnerClick {
     private HomeViewModel homeViewModel;
     private ProdectHomAdapter prodectHomAdapter;
     private List<ResponseProdect>responseProdectList=new ArrayList<>();
+    private ImageView DiscountHome;
+    private OpenDiscountMain openDiscountMain;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -56,11 +60,22 @@ public class HomeFragment extends Fragment implements OnListnerClick {
         super.onViewCreated(view, savedInstanceState);
         initView(view);
       fetchResposeFromJsonAssets();
+        openDiscount();
+    }
+
+    private void openDiscount() {
+        DiscountHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               openDiscountMain.openDiscount("open");
+            }
+        });
     }
 
 
     private void initView(View view) {
         HomerecyclerView=view.findViewById(R.id.recyclerViewHomePage);
+        DiscountHome=view.findViewById(R.id.off60);
     }
 
     private void fetchResposeFromJsonAssets() {
@@ -109,12 +124,19 @@ public class HomeFragment extends Fragment implements OnListnerClick {
 
     @Override
     public void sendToCart(ResponseProdect responseProdect, int position) {
-
+        Bundle bundle=new Bundle();
+        bundle.putString("name",responseProdect.getTitle());
+        bundle.putString("Url",responseProdect.getImage());
+        bundle.putString("selling",responseProdect.getSellingPrice());
+        bundle.putString("Mrp",responseProdect.getProductMRP());
+        bundle.putString("unit",responseProdect.getUnit());
+        fragmentCommunication.sendTOCart(bundle);
     }
 
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         fragmentCommunication= (FragmentCommunication) context;
+        openDiscountMain= (OpenDiscountMain) context;
     }
 }

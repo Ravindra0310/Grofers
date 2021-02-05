@@ -1,4 +1,4 @@
-package com.example.grofers_app;
+package com.example.grofers_app.DiscountFragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -15,7 +15,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.grofers_app.R;
 import com.example.grofers_app.adapter_holders.ResponseProdect;
+import com.example.grofers_app.listners.FragmentCommunication;
 import com.example.grofers_app.listners.OnListnerClick;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -25,29 +27,28 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BooksStationaryFragment extends Fragment implements OnListnerClick {
 
-    private RecyclerView BooksStationaryRecyclerView;
+public class VegetablesFruitsFragment extends Fragment implements OnListnerClick {
+    private RecyclerView VegetablesRecyclerView;
     private GroceryAdapter groceryAdapter;
     private GroferDiscountModel groferDiscountModel;
     private List<ResponseProdect> responseProdectList = new ArrayList<>();
-
-    public BooksStationaryFragment() {
+    private FragmentCommunication fragmentCommunication;
+    public VegetablesFruitsFragment() {
 
     }
 
 
     public static Fragment newInstance() {
-
-        BooksStationaryFragment booksStationaryFragment = new BooksStationaryFragment();
-        return booksStationaryFragment;
+        VegetablesFruitsFragment vegetablesFruitsFragment = new VegetablesFruitsFragment();
+        return vegetablesFruitsFragment;
     }
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         groferDiscountModel = new ViewModelProvider(this).get(GroferDiscountModel.class);
 
-        View root = inflater.inflate(R.layout.fragment_books_stationary, container, false);
+        View root = inflater.inflate(R.layout.fragment_vegetables_fruits, container, false);
         groferDiscountModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@NonNull String s) {
@@ -66,7 +67,7 @@ public class BooksStationaryFragment extends Fragment implements OnListnerClick 
     }
 
     private void initView(View view) {
-        BooksStationaryRecyclerView = view.findViewById(R.id.BooksRecycleView);
+        VegetablesRecyclerView = view.findViewById(R.id.VegetablesRecycleView);
 
     }
 
@@ -91,8 +92,8 @@ public class BooksStationaryFragment extends Fragment implements OnListnerClick 
     private void setRecyclerAdapter() {
         groceryAdapter = new GroceryAdapter(responseProdectList, this);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
-        BooksStationaryRecyclerView.setLayoutManager(layoutManager);
-        BooksStationaryRecyclerView.setAdapter(groceryAdapter);
+        VegetablesRecyclerView.setLayoutManager(layoutManager);
+        VegetablesRecyclerView.setAdapter(groceryAdapter);
     }
 
 
@@ -109,19 +110,30 @@ public class BooksStationaryFragment extends Fragment implements OnListnerClick 
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-
+        fragmentCommunication= (FragmentCommunication) context;
     }
-
-
 
 
     @Override
     public void sendDataToDetails(ResponseProdect responseProdect, int position) {
-
+        Bundle bundle= new Bundle();
+        bundle.putString("name",responseProdect.getTitle());
+        bundle.putString("Url",responseProdect.getImage());
+        bundle.putString("selling",responseProdect.getSellingPrice());
+        bundle.putString("Mrp",responseProdect.getProductMRP());
+        bundle.putString("unit",responseProdect.getUnit());
+        bundle.putString("des",responseProdect.getDescription());
+        fragmentCommunication.commincation(bundle);
     }
 
     @Override
     public void sendToCart(ResponseProdect responseProdect, int position) {
-
+        Bundle bundle= new Bundle();
+        bundle.putString("name",responseProdect.getTitle());
+        bundle.putString("Url",responseProdect.getImage());
+        bundle.putString("selling",responseProdect.getSellingPrice());
+        bundle.putString("Mrp",responseProdect.getProductMRP());
+        bundle.putString("unit",responseProdect.getUnit());
+        fragmentCommunication.sendTOCart(bundle);
     }
 }

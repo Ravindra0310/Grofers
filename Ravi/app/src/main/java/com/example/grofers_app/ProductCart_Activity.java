@@ -7,22 +7,21 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.grofers_app.CartAdapters.CartResponse;
+import com.example.grofers_app.CartAdapters.CartViewAdapter;
 import com.example.grofers_app.adapter_holders.ProdectHomAdapter;
 import com.example.grofers_app.adapter_holders.ResponseProdect;
 import com.example.grofers_app.listners.FragmentCommunication;
 import com.example.grofers_app.listners.OnListnerClick;
-import com.example.grofers_app.ui.home.HomeViewModel;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.InputStream;
 import java.lang.reflect.Type;
 import java.text.NumberFormat;
-import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 

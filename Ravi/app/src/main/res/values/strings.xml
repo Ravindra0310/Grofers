@@ -40,5 +40,7 @@
 
     <string name="dialog_message">Confirm your Payment</string>
     <string name="dialog_title">Confirm Your Payment</string>
+    <string name="my_cart">My Cart</string>
+    <string name="m_r_p">M.R.P.</string>
 
 </resources>

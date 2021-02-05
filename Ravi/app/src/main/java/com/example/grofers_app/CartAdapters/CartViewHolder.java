@@ -1,4 +1,4 @@
-package com.example.grofers_app;
+package com.example.grofers_app.CartAdapters;
 
 import android.view.View;
 import android.widget.Button;
@@ -9,6 +9,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.grofers_app.CartAdapters.CartResponse;
+import com.example.grofers_app.ListnerForRemove;
+import com.example.grofers_app.R;
 
 public class CartViewHolder extends RecyclerView.ViewHolder {
     private ImageView mproductImage;

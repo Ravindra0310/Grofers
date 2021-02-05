@@ -13,11 +13,9 @@
         android:theme="@style/Theme.GrofersApp">
         <activity android:name=".PaymentOptionActivity"></activity>
         <activity android:name=".ProductCart_Activity" />
-        <activity android:name=".MyCartItemActivity"></activity>
         <activity android:name=".SavedWhereYouWantAddress" />
-        <activity android:name=".ProductCart_Activity" />
         <activity android:name=".ProductDetailsActivity" />
-        <activity android:name=".DicountMainActivity" />
+        <activity android:name=".DiscountFragments.DicountMainActivity" />
         <activity android:name=".Home_Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
