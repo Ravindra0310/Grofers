@@ -37,7 +37,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
             mtvProductName.setText(name);
             String mrp=getIntent().getStringExtra("Mrp");
             mtvProductPrice.setText(mrp);
-            String selling=getIntent().getStringExtra("Selling");
+            String selling=getIntent().getStringExtra("selling");
             mtvProductsellingPrice.setText(selling);
             String unit=getIntent().getStringExtra("unit");
             mtvProductUnit.setText(unit);

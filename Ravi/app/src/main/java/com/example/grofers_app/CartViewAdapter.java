@@ -12,16 +12,18 @@ import java.util.List;
 public class CartViewAdapter extends RecyclerView.Adapter<CartViewHolder> {
 
     private List<CartResponse> cartResponseList;
+    private ListnerForRemove listnerForRemove;
 
-    public CartViewAdapter(List<CartResponse> cartResponseList) {
+    public CartViewAdapter(List<CartResponse> cartResponseList,ListnerForRemove listnerForRemove) {
         this.cartResponseList = cartResponseList;
+        this.listnerForRemove=listnerForRemove;
     }
 
     @NonNull
     @Override
     public CartViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cart_iteams, parent, false);
-        return new CartViewHolder(view);
+        return new CartViewHolder(view,listnerForRemove);
     }
 
     @Override

@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GrofersApp">
-        <activity android:name=".ProductCart_Activity"></activity>
+        <activity android:name=".PaymentOptionActivity"></activity>
+        <activity android:name=".ProductCart_Activity" />
         <activity android:name=".ProductDetailsActivity" />
         <activity android:name=".Home_Activity">
             <intent-filter>

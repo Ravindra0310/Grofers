@@ -2,6 +2,7 @@ package com.example.grofers_app;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.example.grofers_app.listners.FragmentCommunication;
 import com.google.android.material.navigation.NavigationView;
@@ -13,6 +14,8 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
+import static android.widget.Toast.LENGTH_LONG;
 
 public class Home_Activity extends AppCompatActivity implements FragmentCommunication {
     private AppBarConfiguration mAppBarConfiguration;
@@ -51,7 +54,7 @@ public class Home_Activity extends AppCompatActivity implements FragmentCommunic
             Intent intent = new Intent(Home_Activity.this, ProductDetailsActivity.class);
             intent.putExtra("name", bundle.getString("name"));
             intent.putExtra("Url", bundle.getString("Url"));
-            intent.putExtra("Selling", bundle.getString("selling"));
+            intent.putExtra("selling", bundle.getString("selling"));
             intent.putExtra("Mrp", bundle.getString("Mrp"));
             intent.putExtra("unit", bundle.getString("unit"));
             intent.putExtra("des", bundle.getString("des"));
@@ -65,9 +68,10 @@ public class Home_Activity extends AppCompatActivity implements FragmentCommunic
             Intent intent = new Intent(Home_Activity.this, ProductCart_Activity.class);
             intent.putExtra("name", bundle.getString("name"));
             intent.putExtra("Url", bundle.getString("Url"));
-            intent.putExtra("Selling", bundle.getString("selling"));
+            intent.putExtra("selling", bundle.getString("selling"));
             intent.putExtra("Mrp", bundle.getString("Mrp"));
             intent.putExtra("unit", bundle.getString("unit"));
+            Toast.makeText(this,"Product is Added To Cart",Toast.LENGTH_SHORT).show();
             startActivity(intent);
         }
     }
