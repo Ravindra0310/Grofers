@@ -81,6 +81,7 @@
             <ImageView
                 android:id="@+id/imYourTotalCoins"
                 android:layout_width="match_parent"
+                android:scaleType="fitXY"
                 android:layout_height="@dimen/dp150"
                 android:src="@drawable/ic_total_coins" />
 
@@ -88,6 +89,7 @@
                 android:id="@+id/imReferFriend_1"
                 android:layout_width="match_parent"
                 android:layout_height="500dp"
+                android:scaleType="fitXY"
                 android:layout_below="@+id/imYourTotalCoins"
                 android:src="@drawable/ic_refer_friend_1" />
 
@@ -95,6 +97,7 @@
                 android:id="@+id/imReferFriend_2"
                 android:layout_width="match_parent"
                 android:layout_height="600dp"
+                android:scaleType="fitXY"
                 android:layout_below="@+id/imReferFriend_1"
                 android:src="@drawable/ic_refer_friend_2" />
 

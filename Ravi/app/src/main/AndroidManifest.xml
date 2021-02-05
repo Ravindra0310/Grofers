@@ -6,8 +6,9 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -16,20 +17,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GrofersApp">
-        <activity android:name=".ProductCart_Activity"></activity>
+        <activity android:name=".Custom_popup"></activity>
+        <activity android:name=".Share_Activity" />
+        <activity android:name=".Gobd_Sale" />
+        <activity android:name=".My_Inaam" />
+        <activity android:name=".My_Notification" />
+        <activity android:name=".ProductCart_Activity" />
         <activity android:name=".ProductDetailsActivity" />
-        <activity android:name=".Home_Activity">
-        <activity android:name=".WinWin"></activity>
+        <activity android:name=".WinWin" />
         <activity android:name=".Refer_your_friend" />
         <activity android:name=".websites" />
-        <activity android:name=".Offer_Zone"/>
+        <activity android:name=".Offer_Zone" />
         <activity android:name=".MyWallet" />
         <activity android:name=".Login" />
         <activity android:name=".LocationPermission" />
         <activity android:name=".supermarket_Vs_grofers" />
-        <activity android:name=".ProductDetailsActivity"></activity>
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".MainActivity2">
+        <activity android:name=".Home_Activity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

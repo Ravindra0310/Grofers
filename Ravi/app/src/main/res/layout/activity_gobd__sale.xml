@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gobd_Sale">
+
+    <TextView
+        android:id="@+id/rectanglesBoxGobd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBackButtonGobd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/dp10"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivAddToCartsGobd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:padding="@dimen/dp10"
+        android:src="@drawable/ic_baseline_shopping_cart_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp30"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/monda"
+        android:padding="@dimen/dp5"
+        android:text="Thank You!"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintStart_toEndOf="@+id/ivBackButtonGobd"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivSearchGobd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp15"
+        android:padding="@dimen/dp10"
+        android:src="@drawable/ic_baseline_search1_24"
+        app:layout_constraintEnd_toStartOf="@+id/ivAddToCartsGobd"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectanglesBoxGobd">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imThankYou"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_thank_you_1" />
+
+            <ImageView
+                android:id="@+id/imWhatIndia"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_below="@+id/imThankYou"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_what_india_has_won_2" />
+
+            <ImageView
+                android:id="@+id/imPrice"
+                android:layout_width="match_parent"
+                android:layout_height="630dp"
+                android:layout_below="@+id/imWhatIndia"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_price_3" />
+
+            <ImageView
+                android:id="@+id/imBiggest"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@+id/imPrice"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_biggest_part_4" />
+
+            <ImageView
+                android:id="@+id/imCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="660dp"
+                android:layout_below="@+id/imBiggest"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_customer_5" />
+
+            <ImageView
+                android:id="@+id/imTotal_Saving"
+                android:layout_width="match_parent"
+                android:layout_height="510dp"
+                android:layout_below="@+id/imCustomer"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_total_saving_7" />
+
+            <ImageView
+                android:id="@+id/imYourFavourite"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@+id/imTotal_Saving"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_your_favourite_product_8" />
+
+            <ImageView
+                android:id="@+id/imProduct"
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:layout_below="@+id/imYourFavourite"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_product_9" />
+
+            <ImageView
+                android:id="@+id/imDelivered"
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:layout_below="@+id/imProduct"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_delivered_10" />
+
+            <ImageView
+                android:id="@+id/imServe_you"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@+id/imDelivered"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_serve_you_11" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

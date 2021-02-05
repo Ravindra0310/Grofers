@@ -56,10 +56,10 @@
         android:id="@+id/imYourTotalCoins"
         android:layout_width="match_parent"
         android:layout_height="160dp"
-        app:layout_constraintStart_toEndOf="parent"
+        android:src="@drawable/ic_your_points"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rectanglesBoxWinWIn"
-        android:src="@drawable/ic_Your_Points" />
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectanglesBoxWinWIn" />
 
 
     <ScrollView
@@ -70,24 +70,85 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imYourTotalCoins">
 
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/imReferFriend_1"
-                android:layout_width="match_parent"
-                android:layout_height="500dp"
-                android:src="@drawable/ic_refer_friend_1" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imCardViewOfMakeMyTrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp10"
+                android:elevation="@dimen/dp10"
+                app:cardCornerRadius="@dimen/dp100">
+
+                <ImageView
+                    android:id="@+id/imMakeMyTrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/ic_makemy_trip" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imCardViewOfFreeSugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imCardViewOfMakeMyTrip"
+                android:layout_margin="@dimen/dp10"
+                android:elevation="@dimen/dp10"
+                app:cardCornerRadius="@dimen/dp100">
+
+                <ImageView
+                    android:id="@+id/imFree_sugar"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/ic_free_sugar" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imCardViewOfFreeMaggi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imCardViewOfFreeSugar"
+                android:layout_margin="@dimen/dp10"
+                android:elevation="@dimen/dp10"
+                app:cardCornerRadius="@dimen/dp100">
+
+                <ImageView
+                    android:id="@+id/imFree_maggi"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/ic_free_maggi" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imCardViewOfFreeFarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imCardViewOfFreeMaggi"
+                android:layout_margin="@dimen/dp10"
+                app:cardCornerRadius="@dimen/dp100">
+
+
+                <ImageView
+                    android:id="@+id/imFree_Farm"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_below="@+id/imFree_maggi"
+                    android:src="@drawable/ic_free_farm" />
+
+
+            </androidx.cardview.widget.CardView>
 
 
         </RelativeLayout>
 
 
-
-
     </ScrollView>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
