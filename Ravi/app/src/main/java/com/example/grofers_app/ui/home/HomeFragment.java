@@ -14,7 +14,6 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.grofers_app.ResponseModel;
 import com.example.grofers_app.listners.FragmentCommunication;
 import com.example.grofers_app.listners.OnListnerClick;
 import com.example.grofers_app.adapter_holders.ProdectHomAdapter;

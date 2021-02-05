@@ -30,17 +30,21 @@ public class ViewPagerofDiscountAdapter extends FragmentStatePagerAdapter{
 
        switch (position) {
          case 0:
-              return BiscuitsFragment.newInstance();
-           case 1:
-              return BooksStationaryFragment.newInstance();
-            case 2:
-                return GroceryStaplesFragment.newInstance();
+             return GroceryStaplesFragment.newInstance();
+             case 1:
+                 return HouseHoldFragment.newInstance();
+                 case 2:
+                     return PersonalCareFragment.newInstance();
+
                 case 3:
-                return HouseHoldFragment.newInstance();
-            case 4:
-                return PersonalCareFragment.newInstance();
-            case 5:
-               return VegetablesFruitsFragment.newInstance();
+                    return BiscuitsFragment.newInstance();
+
+
+             case 4:
+                 return VegetablesFruitsFragment.newInstance();
+
+                 case 5:
+                return BooksStationaryFragment.newInstance();
 
 
         }

@@ -1,4 +1,6 @@
 package com.example.grofers_app;
+
+
 import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 
@@ -33,8 +35,8 @@ public class ResponseModel implements Serializable {
 		return image;
 	}
 
-	public String getProductMRP(){
-		return (String) productMRP;
+	public Object getProductMRP(){
+		return productMRP;
 	}
 
 	public String getDescription(){
@@ -57,7 +59,7 @@ public class ResponseModel implements Serializable {
 		return category;
 	}
 
-	public String getSellingPrice(){
-		return (String) sellingPrice;
+	public Object getSellingPrice(){
+		return sellingPrice;
 	}
 }

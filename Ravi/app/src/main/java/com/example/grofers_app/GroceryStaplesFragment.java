@@ -28,20 +28,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class GroceryStaplesFragment extends Fragment implements OnListnerClick {
+public class GroceryStaplesFragment extends Fragment implements OnListnerClick{
     private RecyclerView GroceryRecyclerView;
-    private FragmentCommunication fragmentCommunication;
     private GroceryAdapter groceryAdapter;
     private GroferDiscountModel groferDiscountModel;
-    private List<ResponseProdect> responseProductList = new ArrayList<>();
-
+    private List<ResponseProdect> responseProdectList = new ArrayList<>();
 
     public GroceryStaplesFragment() {
 
     }
 
 
-    public static Fragment newInstance() {
+    public static GroceryStaplesFragment newInstance() {
         GroceryStaplesFragment groceryStaplesFragment = new GroceryStaplesFragment();
         return groceryStaplesFragment;
     }
@@ -70,8 +68,7 @@ public class GroceryStaplesFragment extends Fragment implements OnListnerClick {
     }
 
     private void initView(View view) {
-        GroceryRecyclerView = view.findViewById(R.id.FruitsRecycleView);
-
+        GroceryRecyclerView = view.findViewById(R.id.FruitsRecycleViewGrocery);
 
     }
 
@@ -94,7 +91,7 @@ public class GroceryStaplesFragment extends Fragment implements OnListnerClick {
     }
 
     private void setRecyclerAdapter() {
-        groceryAdapter = new GroceryAdapter(responseProductList, this);
+        groceryAdapter = new GroceryAdapter(responseProdectList, this);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         GroceryRecyclerView.setLayoutManager(layoutManager);
         GroceryRecyclerView.setAdapter(groceryAdapter);
@@ -103,9 +100,9 @@ public class GroceryStaplesFragment extends Fragment implements OnListnerClick {
 
     private void buildPojoFromJson(String json) {
         Gson gson = new Gson();
-        Type type = new TypeToken<List<ResponseModel>>() {
+        Type type = new TypeToken<List<ResponseProdect>>() {
         }.getType();
-        responseProductList = gson.fromJson(json, type);
+        responseProdectList = gson.fromJson(json, type);
         setRecyclerAdapter();
         groceryAdapter.notifyDataSetChanged();
 
@@ -114,26 +111,26 @@ public class GroceryStaplesFragment extends Fragment implements OnListnerClick {
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        fragmentCommunication= (FragmentCommunication) context;
+
     }
 
 
 
     @Override
     public void sendDataToDetails(ResponseProdect responseProdect, int position) {
-//            Bundle bundle= new Bundle();
-//            bundle.putString("name",responseProdect.getTitle());
-//            bundle.putString("Url",responseProdect.getImage());
-//            bundle.putString("selling",responseProdect.getSellingPrice());
-//            bundle.putString("Mrp",responseProdect.getProductMRP());
-//            bundle.putString("unit",responseProdect.getUnit());
-//            bundle.putString("des",responseProdect.getDescription());
-//            fragmentCommunication.commincation(bundle);
+            Bundle bundle= new Bundle();
+            bundle.putString("name",responseProdect.getTitle());
+            bundle.putString("Image",responseProdect.getImage());
+            bundle.putString("selling",responseProdect.getSellingPrice());
+            bundle.putString("Mrp",responseProdect.getProductMRP());
+            bundle.putString("unit",responseProdect.getUnit());
+            bundle.putString("des",responseProdect.getDescription());
 
     }
 
     @Override
     public void sendToCart(ResponseProdect responseProdect, int position) {
+
 
     }
 }

@@ -11,13 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GrofersApp">
-        <activity android:name=".ProductCart_Activity"></activity>
+        <activity android:name=".MyCartItemActivity"></activity>
+        <activity android:name=".SavedWhereYouWantAddress" />
+        <activity android:name=".ProductCart_Activity" />
         <activity android:name=".ProductDetailsActivity" />
-        <activity android:name=".Home_Activity"/>
-<!--        <activity-->
-<!--            android:name=".DicountMainActivity"-->
-<!--            android:label="@string/title_activity_main2"-->
-<!--            android:theme="@style/Theme.GrofersApp.NoActionBar" />-->
+        <activity android:name=".Home_Activity" /> <!-- <activity -->
+        <!-- android:name=".DicountMainActivity" -->
+        <!-- android:label="@string/title_activity_main2" -->
+        <!-- android:theme="@style/Theme.GrofersApp.NoActionBar" /> -->
         <activity android:name=".DicountMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

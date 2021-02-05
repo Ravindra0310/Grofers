@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.grofers_app.adapter_holders.ProdectHomeViewHolder;
 import com.example.grofers_app.adapter_holders.ResponseProdect;
 import com.example.grofers_app.listners.OnListnerClick;
 
