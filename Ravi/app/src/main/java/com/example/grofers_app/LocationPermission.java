@@ -34,9 +34,8 @@ public class LocationPermission extends AppCompatActivity {
             public void run() {
                 ActivityCompat.requestPermissions(LocationPermission.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQ_CODE);
 
-
             }
-        }, 4000);
+        }, 3000);
 
     }
 
@@ -55,6 +54,8 @@ public class LocationPermission extends AppCompatActivity {
                     } else if (grantResults[0] == PackageManager.PERMISSION_DENIED) {
                         if (ActivityCompat.shouldShowRequestPermissionRationale(LocationPermission.this, permissions[0])) {
                             showToast("Permission denied");
+                            ActivityCompat.requestPermissions(LocationPermission.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQ_CODE);
+
 
                         } else {
                             showToast("Permission denied by clicking Dont show again,please go to setting and enable the permission");
