@@ -30,15 +30,15 @@ public class Share_Activity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id=item.getItemId();
-        if(id==R.id.nav_share){
-            ApplicationInfo api=getApplicationContext().getApplicationInfo();
-            String apkPath=api.sourceDir;
-            Intent intent1=new Intent(Intent.ACTION_SEND);
-            intent1.setType("application/vnd.android.package-archive");
-            intent1.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File(apkPath)));
-            startActivity(Intent.createChooser(intent1,"ShareVia"));
-        }
+            int id=item.getItemId();
+            if(id==R.id.nav_share){
+                ApplicationInfo api=getApplicationContext().getApplicationInfo();
+                String apkPath=api.sourceDir;
+                Intent intent1=new Intent(Intent.ACTION_SEND);
+                intent1.setType("application/vnd.android.package-archive");
+                intent1.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File(apkPath)));
+                startActivity(Intent.createChooser(intent1,"ShareVia"));
+            }
         return true;
     }
 }

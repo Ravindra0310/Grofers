@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/home_toolbar_color"
+        android:id="@+id/Searchbar"
+        android:layout_height="50dp"/>
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_loupe" />
+    <EditText
+        android:id="@+id/etLocation"
+        android:layout_width="match_parent"
+        android:textColor="@color/gray"
+        android:hint="Search for nearby landmark,locality"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="@color/gray"
+        android:textColorHint="@color/white"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/UseLocation"
+        android:layout_width="match_parent"
+        android:layout_below="@id/Searchbar"
+        android:background="@color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:text="Use my location"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/RecentSearch"
+        android:layout_width="match_parent"
+        android:layout_below="@id/UseLocation"
+        android:text="Recent Searches"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/Setlocation"
+        android:layout_marginLeft="15dp"
+        android:background="@color/white"
+        android:layout_marginRight="15dp"
+        android:padding="15dp"
+        android:layout_below="@+id/RecentSearch"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

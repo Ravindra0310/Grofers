@@ -12,14 +12,17 @@
                 <item
                     android:id="@+id/nav_loaction"
                     android:icon="@drawable/ic_location"
+                    app:showAsAction="always"
                     android:title="@string/nav_location" />
                 <item
                     android:id="@+id/nav_address"
                     android:icon="@drawable/ic_address"
-                    android:title="My Addressses" />
+                    app:showAsAction="always"
+                    android:title="My Address" />
                 <item
                     android:id="@+id/nav_order"
                     android:icon="@drawable/ic_check_list"
+                    app:showAsAction="always"
                     android:title="My Orders" />
                 <item
                     android:id="@+id/nav_Cart"
@@ -75,6 +78,7 @@
                     android:title="Rate Us" />
                 <item
                     android:id="@+id/nav_share"
+                    app:showAsAction="always"
                     android:icon="@drawable/ic_share"
                     android:title="Share" />
                 <item

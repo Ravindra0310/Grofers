@@ -88,20 +88,20 @@
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/cc1"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
             <ImageView
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/cc2"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
             <ImageView
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/cc3"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -110,20 +110,20 @@
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/cc4"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
             <ImageView
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/cc5"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
             <ImageView
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/cc6"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -132,20 +132,20 @@
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/cc7"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
             <ImageView
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/cc8"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
             <ImageView
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/cc9"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -154,20 +154,20 @@
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/cc10"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
             <ImageView
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/cc11"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
             <ImageView
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/cc12"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -176,20 +176,20 @@
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/cc13"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
             <ImageView
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/cc14"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
             <ImageView
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/cc15"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
         </LinearLayout>
         <ImageView
             android:id="@+id/ss7"

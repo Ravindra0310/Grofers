@@ -17,14 +17,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GrofersApp">
-        <activity android:name=".Custom_popup"></activity>
+        <service
+            android:name=".NotificationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".LocationDetails" />
+        <activity android:name=".Custom_popup" />
         <activity android:name=".Share_Activity" />
         <activity android:name=".Gobd_Sale" />
         <activity android:name=".My_Inaam" />
         <activity android:name=".My_Notification" />
         <activity android:name=".ProductCart_Activity" />
-        <activity android:name=".PaymentOptionActivity"></activity>
-        <activity android:name=".ProductCart_Activity" />
+        <activity android:name=".PaymentOptionActivity" />
         <activity android:name=".SavedWhereYouWantAddress" />
         <activity android:name=".ProductDetailsActivity" />
         <activity android:name=".WinWin" />
@@ -35,9 +40,9 @@
         <activity android:name=".Login" />
         <activity android:name=".LocationPermission" />
         <activity android:name=".supermarket_Vs_grofers" />
-        <activity android:name=".Home_Activity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".DiscountFragments.DicountMainActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Home_Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
