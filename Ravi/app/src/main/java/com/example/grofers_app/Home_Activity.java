@@ -246,7 +246,7 @@ public class Home_Activity extends AppCompatActivity implements FragmentCommunic
                         showToast("Camera and Storage permissions Granted");
                     } else if (grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_DENIED) {
                         if (ActivityCompat.shouldShowRequestPermissionRationale(Home_Activity.this, permissions[1])) {
-                            showToast("Camera granted , Storage denied");
+//                            showToast("Camera granted , Storage denied");
                         } else {
                             showToast("Camera granted , storage denied by selecting do not show again");
                         }

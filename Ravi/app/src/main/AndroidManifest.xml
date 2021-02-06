@@ -40,9 +40,9 @@
         <activity android:name=".Login" />
         <activity android:name=".LocationPermission" />
         <activity android:name=".supermarket_Vs_grofers" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Home_Activity" />
         <activity android:name=".DiscountFragments.DicountMainActivity" />
-        <activity android:name=".Home_Activity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -31,7 +31,7 @@ public class Login extends AppCompatActivity {
                 {
 
                     //will got to home page
-                    Intent intent1=new Intent(Login.this,Home_Activity.class);
+                    Intent intent1=new Intent(Login.this,LocationDetails.class);
                     intent1.putExtra("phoneNumber",metPhoneNumber.getText().toString());
                     startActivity(intent1);
 

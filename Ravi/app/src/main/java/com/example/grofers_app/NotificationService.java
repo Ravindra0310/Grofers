@@ -1,5 +1,6 @@
 package com.example.grofers_app;
 
+import android.Manifest;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -10,9 +11,15 @@ import android.os.Build;
 import android.os.IBinder;
 
 import androidx.annotation.RequiresApi;
+import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
 
+import java.sql.Time;
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class NotificationService extends Service {
+    Timer time;
     public NotificationService() {
     }
 
@@ -30,7 +37,20 @@ public class NotificationService extends Service {
         }else {
             startForeground(2,new Notification());
         }
+        StopNotification();
     }
+
+    private void StopNotification() {
+        time = new Timer();
+        time.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                stopSelf();
+            }
+        }, 40000);
+
+    }
+
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void creteNotification() {
         String channelId = "Ravi";
@@ -58,4 +78,5 @@ public class NotificationService extends Service {
         super.onDestroy();
 
     }
+
 }
