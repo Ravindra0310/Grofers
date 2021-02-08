@@ -31,6 +31,7 @@ import java.util.List;
 public class GroceryStaplesFragment extends Fragment implements OnListnerClick{
     private RecyclerView GroceryRecyclerView;
     private GroceryAdapter groceryAdapter;
+   // private FragmentCommunication fragmentCommunication;
     private GroferDiscountModel groferDiscountModel;
     private List<ResponseProdect> responseProdectList = new ArrayList<>();
 
@@ -111,26 +112,23 @@ public class GroceryStaplesFragment extends Fragment implements OnListnerClick{
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-
     }
-
 
 
     @Override
     public void sendDataToDetails(ResponseProdect responseProdect, int position) {
-            Bundle bundle= new Bundle();
-            bundle.putString("name",responseProdect.getTitle());
-            bundle.putString("Image",responseProdect.getImage());
-            bundle.putString("selling",responseProdect.getSellingPrice());
-            bundle.putString("Mrp",responseProdect.getProductMRP());
-            bundle.putString("unit",responseProdect.getUnit());
-            bundle.putString("des",responseProdect.getDescription());
-
+          //  Bundle bundle= new Bundle();
+            //bundle.putString("name",responseProdect.getTitle());
+            //bundle.putString("Image",responseProdect.getImage());
+            //bundle.putString("selling",responseProdect.getSellingPrice());
+            //bundle.putString("Mrp",responseProdect.getProductMRP());
+            //bundle.putString("unit",responseProdect.getUnit());
+            //bundle.putString("des",responseProdect.getDescription());
+            //fragmentCommunication.commincation(bundle);
     }
 
     @Override
     public void sendToCart(ResponseProdect responseProdect, int position) {
-
 
     }
 }
